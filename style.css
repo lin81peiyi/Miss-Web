@@ -2,26 +2,56 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fef7e6;
+}
+.header {
+  padding: 6px 8px 0px 8px;
+  color: #67755c;
+}
+.header h1 {
+  width: 200rem;
+  display: inline;
 }
 .header .logo img {
   height: 4rem;
   width: 4rem;
   padding: 15px;
   vertical-align: middle;
+  display: inline-block;
 }
 .header nav {
-  padding: 2px 0 2px 120px;
-  letter-spacing: 5px;
-}
-.header nav ul {
+  text-align: center;
+  letter-spacing: 1px;
   display: flex;
+  width: 100%;
+}
+.header nav li {
   list-style-type: none;
+  text-align: center;
+  float: left;
+  margin-left: 60px;
+  position: relative;
 }
 .header nav ul li a {
   text-decoration: none;
+  display: block;
+  padding: 0 10px;
+  color: #67755c;
+  display: inline;
 }
-.ad img {
+.header a:hover {
+  color: #000;
+}
+.header li + li::before {
+  content: "|";
+  position: absolute;
+}
+.banner img {
   margin: 10px 40px;
-  max-width: 80%;
-  max-height: 10rem;
+  max-width: 48rem;
+}
+.products .wrap {
+  display: flex;
+}
+.products .wrap .item {
 }
