@@ -193,6 +193,7 @@
   border: 0px;
   padding: 3px 20px;
 }
+/* 詳細說明 */
 .wrap .info {
   width: 400px;
   float: right;
@@ -207,4 +208,75 @@
   line-height: 30px;
   margin-left: 30px;
   letter-spacing: 1px;
+}
+/* 數量&價格 鈕 */
+.pricebutton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.qty {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  border: 2px solid #aaa;
+  border-radius: 39px;
+}
+input.qtyplus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border: 0px;
+}
+
+input.qtyminus {
+  margin-left: 30px;
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border: 0px;
+}
+input.price {
+  width: 90px;
+  height: 35px;
+  text-align: center;
+  border: 2px solid #aaa;
+  border-radius: 39px;
+  margin-left: 10px;
+}
+/* 更多資訊 */
+.info2-item {
+  border: 1px solid black;
+  margin-left: 30px;
+  padding: 5px;
+}
+/* 相關食譜 */
+.recipe {
+  background-color: white;
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.recipe .title {
+  background-color: #dfd0a8;
+  padding: 15px;
+}
+.recipe td {
+  width: 350px;
+}
+.recipe img {
+  max-width: 150px;
+  margin: 20px;
+  border-radius: 23px;
+}
+/* 商家評論 */
+.comment {
+  background-color: white;
+  width: 90%;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  text-align: center;
 }

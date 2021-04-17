@@ -70,21 +70,76 @@
             </div>
     
             <div class="info">
+
                 <!-- 詳細說明 -->
                 <div class="info1">
                     <h2>美國板腱牛排</h2>
                     <p>效期: 1個月</p>
                     <p>原價: $ 975 元</p>
                     <p>剩餘數量: 3份</p>
+
+                    <!-- 數量&價格 鈕-->
+                    <div class="pricebutton">
+                        <form id='myform' method='POST' action='#'>
+                            <input type='button' value='-' class='qtyminus' field='quantity' />
+                            <input type='text' name='quantity' value='0' class='qty' />
+                            <input type='button' value='+' class='qtyplus' field='quantity' />
+                            <input type="text" name="price" value="$ 585" class="price">
+                        </form>
+                    </div>
                 </div>
+
                 <!-- 更多資訊 -->
                 <div class="info2">
                     <p>更多資訊:</p>
-                    <p>產地:</p>
-                    <p>規格:</p>
+                    <div class="info2-item">
+                        <p>產地:美國</p>
+                        <p>規格:100g±10</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- 相關食譜 -->
+    <div class="recipe">
+        <div class="title">
+            <h3>相關食譜</h3>
+        </div>
+        <table>
+            <tr>
+                <td><img src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=""></td>
+                <td><img src="./img/chad-montano-M0lUxgLnlfk-unsplash.jpg" alt=""></td>
+                <td><img src="./img/vladimir-gladkov-oSZ8WBaCbcg-unsplash.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><p>【西班牙料理】板腱牛排烤飯</p></td>
+                <td><p>嫩煎板腱牛</p></td>
+                <td><p>板腱牛排佐三色料理</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 商家評論 -->
+    <div class="comment">
+        <div class="title"></div>
+        <table>
+            <tr>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>jessica01</td>
+                <td></td>
+                <td>2021/03/22 12:34</td>
+            </tr>
+            <tr>
+                <td>太好吃了太好吃了!!!</td>
+            </tr>
+            <tr>
+                <td><img src="" alt=""></td>
+                <td>草莓奶酪</td>
+            </tr>
+        </table>
     </div>
 
 </body>
