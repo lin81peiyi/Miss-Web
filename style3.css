@@ -163,142 +163,89 @@
   transform: none;
 }
 
-/* 商品說明 */
-.wrap {
-  background-color: white;
-  width: 90%;
+/* 標題欄位 */
+.item_header {
   display: flex;
-  margin-left: 3rem;
+  width: 1000px;
+  margin: 0 auto;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding-left: 10px;
   margin-top: 3rem;
 }
-.wrap .item {
-  padding: 20px;
+.item_header div {
+  width: 200px;
+  color: #67755c;
+  line-height: 30px;
 }
-.wrap .product-item {
-  float: left;
+/* 商品欄位 */
+.item_header .item_detail {
+  width: 50%;
+  margin-left: -120px;
 }
-/* 產品圖 */
-.wrap .product-item img {
-  max-width: 200px;
+/* 購物車內容 */
+.item_body {
+  margin-top: 20px;
+  height: 100px;
+  align-items: center;
   position: relative;
 }
-/* 加入購物車 */
-.wrap .product-item button {
+/* +-鈕 */
+.item_body .count button {
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border: 0px;
+  padding: 2px 5px;
+}
+/* 刪除鈕 */
+.item_body .operate button {
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border: 0px;
+  padding: 2px 5px;
+}
+/* 商品照 */
+.item_detail img {
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+  float: left;
+}
+/* 商品名稱 */
+.item_detail .name {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+/* 總計&結帳 */
+.checkout {
   position: absolute;
-  left: 110px;
-  top: 370px;
-  font-size: 16px;
-  background-color: #ffe000;
-  color: #000;
-  border: 0px;
-  padding: 3px 20px;
+  right: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4rem;
 }
-/* 詳細說明 */
-.wrap .info {
-  width: 400px;
-  float: right;
-  margin: 10px 30px;
+.checkout .price {
+  padding: 10px 2px;
 }
-.wrap .info .info1 h2 {
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
+.checkout .totalprice {
+  padding: 10px;
 }
-.wrap .info p {
-  line-height: 30px;
-  margin-left: 30px;
-  letter-spacing: 1px;
-}
-/* 數量&價格 鈕 */
-.pricebutton {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.qty {
-  width: 50px;
-  height: 35px;
-  text-align: center;
-  border: 0;
-  border: 2px solid #aaa;
-  border-radius: 39px;
-}
-input.qtyplus {
-  width: 25px;
-  height: 35px;
-  border: 1px solid #aaa;
-  background: #f8f8f8;
-  border: 0px;
-}
-
-input.qtyminus {
-  margin-left: 30px;
-  width: 25px;
-  height: 35px;
-  border: 1px solid #aaa;
-  background: #f8f8f8;
-  border: 0px;
-}
-input.price {
-  width: 90px;
-  height: 35px;
-  text-align: center;
-  border: 2px solid #aaa;
-  border-radius: 39px;
+.checkout .button button {
   margin-left: 10px;
-}
-/* 更多資訊 */
-.info2-item {
+  background-color: #f8bb45;
+  color: #67755c;
   border: 1px solid black;
-  margin-left: 30px;
-  padding: 5px;
-}
-/* 相關食譜 */
-.recipe {
-  background-color: white;
-  width: 90%;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 10px 20px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
-.recipe .title {
-  background-color: #dfd0a8;
-  padding: 15px;
-}
-.recipe td {
-  width: 350px;
-}
-.recipe img {
-  max-width: 150px;
-  margin: 20px;
-  border-radius: 23px;
-}
-/* 商家評論 */
-.comment {
-  background-color: white;
-  width: 90%;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
-.comment .title {
-  background-color: #dfd0a8;
-  padding: 15px;
-}
-.comment td {
-  padding: 0.5rem 4.25rem;
-}
-.comment .user {
-  max-width: 130px;
-  border-radius: 80px;
-}
-.comment .comment-item {
-  max-width: 100px;
-}
-.comment .comment2 td {
-  border-top: 1px solid #000;
+.checkout .button button a {
+  text-decoration: none;
+  color: #67755c;
 }
 
 /* Site footer */
@@ -314,6 +261,7 @@ input.price {
   text-align: center;
   position: relative;
   z-index: 0;
+  margin-top: 20rem;
 }
 .site-footer ul {
   padding-left: 0;
