@@ -1,3 +1,4 @@
+/* product */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,9 @@
   font-size: 1.8rem;
   display: inline;
   text-align: center;
-  margin-left: 21rem;
+  margin-left: 30rem;
+  position: relative;
+  top: 15px;
 }
 
 /* 固定最上方欄位 */
@@ -29,6 +32,7 @@
   right: 0;
   z-index: 10000;
   background-color: #dfd0a8;
+  padding-bottom: 1rem;
 }
 
 .header .logo img {
@@ -37,6 +41,8 @@
   padding: 15px;
   vertical-align: middle;
   display: inline;
+  position: absolute;
+  left: 24rem;
 }
 /* 登入 */
 .header .logo a {
@@ -80,11 +86,12 @@
 #menuToggle {
   display: block;
   position: relative;
-  top: 26px;
+  top: 30px;
   left: 10px;
-  z-index: 1;
+  z-index: 10000;
   -webkit-user-select: none;
   user-select: none;
+  position: fixed;
 }
 #menuToggle a {
   text-decoration: none;
@@ -104,7 +111,7 @@
   left: -5px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 10001;
   -webkit-touch-callout: none;
 }
 #menuToggle span {
